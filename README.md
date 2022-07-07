@@ -17,9 +17,10 @@ Spring Boot, Spring REST, REST Template.
 
 #### Add survivor
 
-```http
-  POST /survivor
-```
+`Method: POST`
+
+ `API Endpoint : /survivor`
+  
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `long` | Id of survivor |

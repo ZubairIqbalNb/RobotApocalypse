@@ -2,11 +2,11 @@
 
 World as we know is taken over by robots.
 The robots once friendly, have now turned against mankind,
-infecting everyone with an engineered virus called D-ZV.
+infecting everyone with a robot engineered virus called REV-50.
 
 RAM is designed to store/provide information about the robots, survivors, 
 their resourses, infected survivors and their percentage.
-RAM provides excellent service to tackle the sneaky robotic attacks and to limit the spread of D-ZV.
+RAM provides excellent service to tackle the sneaky robotic attacks and to limit the spread of REV-50.
 
 ## Author
 

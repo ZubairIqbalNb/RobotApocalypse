@@ -30,36 +30,34 @@ Spring Boot, Spring REST, REST Template.
 | `name`      | `String` | name of survivor |
 | `age`      | `String` | age of survivor |
 | `gender`      | `String` | gender of survivor |
-| `longitude`      | `String` | location of survivor |
-| `latitude`      | `String` | location of survivor |
+| `lastLocation`      | `String` | lastLocation of survivor |
 | `water`      | `Boolean` | resource of survivor |
 | `food`      | `Boolean` | resource of survivor |
 | `medication`      | `Boolean` | resource of survivor |
 | `ammunition`      | `Boolean` | resource of survivor |
-| `infectionCount`      | `int` | infectionCount of survivor |
+| `contaminationCount`      | `int` | contaminationCount of survivor |
 | `isInfected`      | `Boolean` | isInfected of survivor |
 
 ### Update location of survivor
 
 `Method: PUT`
 
-`API Endpoint:/survivor/update-location?survivor_id&latitude&longitude`
+`API Endpoint:/survivor/update-location?survivor_id&last_location`
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `long` | Id of survivor |
-| `latitude`      | `String` | latitude of survivor |
-| `longitude`      | `String` | longitude of survivor |
+| `survivor_id`      | `long` | Id of survivor |
+| `last_location`      | `String` | latitude of survivor |
 
 ### Report contamination of survivor
 
   `Method: PUT`
   
-  `API Endpoint: /report/survivor`
+  `API Endpoint: /report/survivor?survivor_id`
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `long` | Id of survivor |
+| `survivor_id`      | `long` | Id of survivor |
 
 ### Get infected survivors list and percentage
 

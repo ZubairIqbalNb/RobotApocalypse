@@ -2,15 +2,18 @@
 
 World as we know is taken over by robots.
 The robots once friendly, have now turned against mankind,
-infecting everyone with an engineered zombie-virus called (D-ZV).
+infecting everyone with an engineered virus called D-ZV.
 
-RAM is designed to store/keep information about the survivors, their resourses, infected survivors and their percentage, in order to track and limit the spread of D-ZV.
+RAM is designed to store/provide information about the robots, survivors, 
+their resourses, infected survivors and their percentage.
+RAM provides excellent service to tackle the sneaky robotic attacks and to limit the spread of D-ZV.
 
 ## Author
 
-- Zubair Iqbal - Backend Developer
+- Zubair Iqbal - Software Engineer
 
 ## 🛠 Skills Used
+
 Spring Boot, Spring REST, REST Template.
 
 ## API Reference
@@ -29,10 +32,10 @@ Spring Boot, Spring REST, REST Template.
 | `gender`      | `String` | gender of survivor |
 | `longitude`      | `String` | location of survivor |
 | `latitude`      | `String` | location of survivor |
-| `water`      | `Boolean` | resourse of survivor |
-| `food`      | `Boolean` | resourse of survivor |
-| `medication`      | `Boolean` | resourse of survivor |
-| `ammunition`      | `Boolean` | resourse of survivor |
+| `water`      | `Boolean` | resource of survivor |
+| `food`      | `Boolean` | resource of survivor |
+| `medication`      | `Boolean` | resource of survivor |
+| `ammunition`      | `Boolean` | resource of survivor |
 | `infectionCount`      | `int` | infectionCount of survivor |
 | `isInfected`      | `Boolean` | isInfected of survivor |
 
@@ -52,7 +55,7 @@ Spring Boot, Spring REST, REST Template.
 
   `Method: PUT`
   
-  'API Endpoint: /report/survivor`
+  `API Endpoint: /report/survivor`
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |

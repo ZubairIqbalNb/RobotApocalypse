@@ -36,7 +36,7 @@ Spring Boot, Spring REST, REST Template.
 | `medication`      | `Boolean` | resource of survivor |
 | `ammunition`      | `Boolean` | resource of survivor |
 | `contaminationCount`      | `int` | contaminationCount of survivor |
-| `isInfected`      | `Boolean` | isInfected of survivor |
+| `isInfected`      | `Boolean` | isInfected survivor |
 
 ### Update location of survivor
 
@@ -47,7 +47,7 @@ Spring Boot, Spring REST, REST Template.
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `survivor_id`      | `long` | Id of survivor |
-| `last_location`      | `String` | latitude of survivor |
+| `last_location`      | `String` | lastLocation of survivor |
 
 ### Report contamination of survivor
 

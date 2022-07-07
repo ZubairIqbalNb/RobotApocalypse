@@ -30,8 +30,8 @@ public class SurvivorController {
 	
 	@PutMapping(value = "/update-location")
 	public ResponseEntity<?> updateLocation(@RequestParam("survivor_id") Long id,
-			@RequestParam("latitude") String latitude, @RequestParam("longitude") String longitude) {	
-		Survivor survivor =survivorService.updateSurvivor(id, latitude, longitude);
+			@RequestParam("last_location") String lastLocation) {	
+		Survivor survivor =survivorService.updateSurvivor(id, lastLocation);
 		return new ResponseEntity<Survivor>(survivor, HttpStatus.OK);
 	}
 	

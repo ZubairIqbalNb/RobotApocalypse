@@ -8,8 +8,8 @@ import com.apocalypse.model.Survivor;
 
 public interface SurvivorRepository extends CrudRepository<Survivor, Long> {
 	
-	public List<Survivor> findByInfectionCountGreaterThanEqual(int count);
+	public List<Survivor> findByContaminationCountGreaterThanEqual(int count);
 	
-	public List<Survivor> findByInfectionCountLessThan(int count);
+	public List<Survivor> findByContaminationCountLessThan(int count);
 	
 }

@@ -24,11 +24,8 @@ public class Survivor {
 	@Column(name="gender")
 	String gender;
 	
-	@Column(name="latitude")
-	String latitude;
-	
-	@Column(name="longitude")
-	String longitude;
+	@Column(name="last_location")
+	String lastLocation;
 	
 	@Column(name="water")
 	Boolean water;
@@ -42,8 +39,8 @@ public class Survivor {
 	@Column(name="ammunition")
 	Boolean ammunition;
 	
-	@Column(name="infection_count")
-	int infectionCount;
+	@Column(name="contamination_count")
+	int contaminationCount;
 	
 	@Column(name="is_infected")
 	Boolean isInfected;
@@ -84,20 +81,12 @@ public class Survivor {
 		this.gender = gender;
 	}
 
-	public String getLatitude() {
-		return latitude;
+	public String getLastLocation() {
+		return lastLocation;
 	}
 
-	public void setLatitude(String latitude) {
-		this.latitude = latitude;
-	}
-
-	public String getLongitude() {
-		return longitude;
-	}
-
-	public void setLongitude(String longitude) {
-		this.longitude = longitude;
+	public void setLastLocation(String lastLocation) {
+		this.lastLocation = lastLocation;
 	}
 
 	public Boolean getWater() {
@@ -132,12 +121,12 @@ public class Survivor {
 		this.ammunition = ammunition;
 	}
 
-	public int getInfectionCount() {
-		return infectionCount;
+	public int getContaminationCount() {
+		return contaminationCount;
 	}
 
-	public void setInfectionCount(int infectionCount) {
-		this.infectionCount = infectionCount;
+	public void setContaminationCount(int contaminationCount) {
+		this.contaminationCount = contaminationCount;
 	}
 
 	public Boolean getIsInfected() {

@@ -7,7 +7,7 @@ public interface SurvivorService {
 	
 	public Long saveSurvivor (Survivor survivor); 
 	
-	public Survivor updateSurvivor(Long id , String latitude , String longitude);
+	public Survivor updateSurvivor(Long id , String lastLocation);
 	
 	public Survivor reportSurvivor(Long id);
 	

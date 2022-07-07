@@ -26,10 +26,9 @@ public class SurvivorServiceImpl implements SurvivorService {
 	}
 
 	@Override
-	public Survivor updateSurvivor(Long id, String latitude, String longitude) {
+	public Survivor updateSurvivor(Long id, String lastLocation) {
 		Survivor survivor = survivorRepository.findById(id).get();
-		survivor.setLatitude(latitude);
-		survivor.setLongitude(longitude);
+		survivor.setLastLocation(lastLocation);
 		Survivor updatedSurvivor = survivorRepository.save(survivor); 
 		return updatedSurvivor;
 	}
@@ -37,10 +36,10 @@ public class SurvivorServiceImpl implements SurvivorService {
 	@Override
 	public Survivor reportSurvivor(Long id) {
 		Survivor survivor = survivorRepository.findById(id).get();
-		if(survivor.getInfectionCount() == BigInteger.TWO.intValue()) {
+		if(survivor.getContaminationCount() == BigInteger.TWO.intValue()) {
 			survivor.setIsInfected(Boolean.TRUE);
 		}
-		survivor.setInfectionCount(survivor.getInfectionCount() + 1);
+		survivor.setContaminationCount(survivor.getContaminationCount() + 1);
 		Survivor reportedSurvivor = survivorRepository.save(survivor);
 		return  reportedSurvivor;
 	}
@@ -48,7 +47,7 @@ public class SurvivorServiceImpl implements SurvivorService {
 	@Override
 	public PercentageAndSurvivorResponse infectedSurvivorListAndPercentage() {
 		int count =3;
-		List<Survivor> infectedSurvivorList = survivorRepository.findByInfectionCountGreaterThanEqual(count);
+		List<Survivor> infectedSurvivorList = survivorRepository.findByContaminationCountGreaterThanEqual(count);
 		List<Survivor> totalSurvivors = (List<Survivor>) survivorRepository.findAll();
 		int totalSurvivorsCount = totalSurvivors.size();
 		int infectedCount = infectedSurvivorList.size();
@@ -64,7 +63,7 @@ public class SurvivorServiceImpl implements SurvivorService {
 	@Override
 	public PercentageAndSurvivorResponse nonInfectedSurvivorListAndPercentage() {
 		int count =3;
-		List<Survivor> nonInfectedSurvivorList = survivorRepository.findByInfectionCountLessThan(count);
+		List<Survivor> nonInfectedSurvivorList = survivorRepository.findByContaminationCountLessThan(count);
 		List<Survivor> totalSurvivors = (List<Survivor>) survivorRepository.findAll();
 		int totalSurvivorsCount = totalSurvivors.size();
 		int nonInfectedCount = nonInfectedSurvivorList.size();

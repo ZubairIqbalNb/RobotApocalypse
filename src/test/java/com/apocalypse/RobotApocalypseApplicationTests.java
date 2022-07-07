@@ -1,4 +1,4 @@
-package com.zubair.dev;
+package com.apocalypse;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -14,7 +14,7 @@ RAM provides excellent service to tackle the sneaky robotic attacks and to limit
 
 ## 🛠 Skills Used
 
-Spring Boot, Spring REST, REST Template.
+Spring Boot, Spring REST, REST Template, Maven, JPA, H2 Database.
 
 ## API Reference
 

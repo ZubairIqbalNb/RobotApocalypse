@@ -52,7 +52,7 @@ Spring Boot, Spring REST, REST Template.
 
   `Method: PUT`
   
-  'API Endpoint: /report/survivor`
+  `API Endpoint: /report/survivor`
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |

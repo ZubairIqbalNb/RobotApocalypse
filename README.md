@@ -15,11 +15,11 @@ Spring Boot, Spring REST, REST Template.
 
 ## API Reference
 
-#### Add survivor
+### Add survivor
 
 `Method: POST`
 
- `API Endpoint : /survivor`
+ `API Endpoint: /survivor`
   
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
@@ -36,10 +36,11 @@ Spring Boot, Spring REST, REST Template.
 | `infectionCount`      | `int` | infectionCount of survivor |
 | `isInfected`      | `Boolean` | isInfected of survivor |
 
-#### Update location of survivor
+### Update location of survivor
 
-http
-  PUT /survivor/update-location?survivor_id&latitude&longitude
+`Method: PUT`
+
+`API Endpoint:/survivor/update-location?survivor_id&latitude&longitude`
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
@@ -47,22 +48,24 @@ http
 | `latitude`      | `String` | latitude of survivor |
 | `longitude`      | `String` | longitude of survivor |
 
-#### Report contamination of survivor
-http
-  PUT /report/survivor
+### Report contamination of survivor
 
+  `Method: PUT`
+  
+  'API Endpoint: /report/survivor`
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `long` | Id of survivor |
 
-#### Get infected survivors list and percentage
+### Get infected survivors list and percentage
 
-http
-   GET /survivor/infected-list-and-percentage
+`Method: GET`
 
-#### Get non-infected survivors list and percentage
+`API Endpoint: /survivor/infected-list-and-percentage`
 
-http
-   GET /survivor/non-infected-list-and-percentage
+### Get non-infected survivors list and percentage
 
+`Method: GET`
+
+`API EndPoint: /survivor/non-infected-list-and-percentage`

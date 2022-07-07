@@ -37,9 +37,9 @@ Spring Boot, Spring REST, REST Template.
 
 #### Update location of survivor
 
-```http
+http
   PUT /survivor/update-location?survivor_id&latitude&longitude
-```
+
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `long` | Id of survivor |
@@ -47,10 +47,9 @@ Spring Boot, Spring REST, REST Template.
 | `longitude`      | `String` | longitude of survivor |
 
 #### Report contamination of survivor
-
-```http
+http
   PUT /report/survivor
-```
+
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
@@ -58,11 +57,11 @@ Spring Boot, Spring REST, REST Template.
 
 #### Get infected survivors list and percentage
 
-```http
+http
    GET /survivor/infected-list-and-percentage
-```
+
 #### Get non-infected survivors list and percentage
 
-```http
+http
    GET /survivor/non-infected-list-and-percentage
-```
+

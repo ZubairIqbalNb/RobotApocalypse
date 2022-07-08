@@ -30,7 +30,7 @@ Spring Boot, Spring REST, REST Template, Maven, JPA, H2 Database.
 | `name`      | `String` | name of survivor |
 | `age`      | `String` | age of survivor |
 | `gender`      | `String` | gender of survivor |
-| `lastLocation`      | `String` | lastLocation of survivor |
+| `lastLocation`      | `String` | lastLocation(lon&lat)of survivor |
 | `water`      | `Boolean` | resource of survivor |
 | `food`      | `Boolean` | resource of survivor |
 | `medication`      | `Boolean` | resource of survivor |

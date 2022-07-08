@@ -70,3 +70,9 @@ Spring Boot, Spring REST, REST Template, Maven, JPA, H2 Database.
 `Method: GET`
 
 `API EndPoint: /survivor/non-infected-list-and-percentage`
+
+### Get list of robots
+
+`Method: GET`
+
+`API EndPoint: /robot/list`
